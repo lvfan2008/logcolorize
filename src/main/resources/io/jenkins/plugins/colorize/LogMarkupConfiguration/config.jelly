@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
+    <f:section title="${%Log Level Colors And Maven Colors}">
+        <f:entry field="debugColor" title="${%debugColor}">
+            <f:textbox default="#00FF00"/>
+        </f:entry>
+        <f:entry field="infoColor" title="${%infoColor}">
+            <f:textbox default="#0000FF"/>
+        </f:entry>
+        <f:entry field="warningColor" title="${%warningColor}">
+            <f:textbox default="#00FF00"/>
+        </f:entry>
+        <f:entry field="errorColor" title="${%errorColor}">
+            <f:textbox default="#FF0000"/>
+        </f:entry>
+        <f:entry field="threadColor" title="${%threadColor}">
+            <f:textbox default="#FF00FF"/>
+        </f:entry>
+        <f:entry field="packageColor" title="${%packageColor}">
+            <f:textbox default="#669999"/>
+        </f:entry>
+        <f:entry field="successColor" title="${%successColor}">
+            <f:textbox default="#00FF00"/>
+        </f:entry>
+        <f:entry field="pluginColor" title="${%pluginColor}">
+            <f:textbox default="#00FF33"/>
+        </f:entry>
+        <f:entry field="moduleColor" title="${%moduleColor}">
+            <f:textbox default="#6699FF"/>
+        </f:entry>
+    </f:section>
+</j:jelly>
