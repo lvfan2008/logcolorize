@@ -3,13 +3,13 @@
 <j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
     <f:section title="${%Log Level Colors And Maven Colors}">
         <f:entry field="debugColor" title="${%debugColor}">
-            <f:textbox default="#00FF00"/>
+            <f:textbox default="#66FF99"/>
         </f:entry>
         <f:entry field="infoColor" title="${%infoColor}">
             <f:textbox default="#0000FF"/>
         </f:entry>
         <f:entry field="warningColor" title="${%warningColor}">
-            <f:textbox default="#00FF00"/>
+            <f:textbox default="#CC9933"/>
         </f:entry>
         <f:entry field="errorColor" title="${%errorColor}">
             <f:textbox default="#FF0000"/>

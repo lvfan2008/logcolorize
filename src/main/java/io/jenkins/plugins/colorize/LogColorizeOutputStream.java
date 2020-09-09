@@ -28,7 +28,7 @@ public class LogColorizeOutputStream extends LineTransformationOutputStream.Dele
     public static class LogLevelColorizeNote extends ConsoleNote<Object> {
         @Override
         public ConsoleAnnotator annotate(Object context, MarkupText text, int charPos) {
-            System.out.println("ConsoleAnnotator text: " + text.getText());
+            // System.out.println("ConsoleAnnotator text: " + text.getText());
             LogMarkupText.markupAll(text);
             return null;
         }

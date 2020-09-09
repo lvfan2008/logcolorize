@@ -42,7 +42,7 @@ public class LogColorizeBuilderWrapper extends SimpleBuildWrapper {
 
         @Override
         public OutputStream decorateLogger(AbstractBuild build, OutputStream logger) throws IOException, InterruptedException {
-            System.out.println("ConsoleLogFilterImpl decorateLogger Called,new LogLevelColorizeOutputStream");
+            // System.out.println("ConsoleLogFilterImpl decorateLogger Called,new LogLevelColorizeOutputStream");
             return new LogColorizeOutputStream(logger);
         }
     }

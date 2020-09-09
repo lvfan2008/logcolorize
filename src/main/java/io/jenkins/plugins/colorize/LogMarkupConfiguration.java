@@ -6,6 +6,7 @@ import jenkins.model.GlobalConfiguration;
 import org.kohsuke.stapler.DataBoundSetter;
 import org.kohsuke.stapler.QueryParameter;
 
+import java.util.Optional;
 import java.util.regex.Pattern;
 
 /**
@@ -95,6 +96,16 @@ public class LogMarkupConfiguration extends GlobalConfiguration {
     public LogMarkupConfiguration() {
         // When Jenkins is restarted, load any saved configuration from disk.
         load();
+        // Set default value
+        debugColor = debugColor == null ? "#66FF99" : debugColor;
+        infoColor = infoColor == null ? "#0000FF" : infoColor;
+        warningColor = warningColor == null ? "CC9933" : warningColor;
+        errorColor = errorColor == null ? "#FF0000" : errorColor;
+        threadColor = threadColor == null ? "#FF00FF" : threadColor;
+        packageColor = packageColor == null ? "#669999" : packageColor;
+        successColor = successColor == null ? "#00FF00" : successColor;
+        pluginColor = pluginColor == null ? "#00FF33" : pluginColor;
+        moduleColor = moduleColor == null ? "#6699FF" : moduleColor;
     }
 
 
