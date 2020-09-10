@@ -99,7 +99,7 @@ public class LogMarkupConfiguration extends GlobalConfiguration {
         // Set default value
         debugColor = debugColor == null ? "#66FF99" : debugColor;
         infoColor = infoColor == null ? "#0000FF" : infoColor;
-        warningColor = warningColor == null ? "CC9933" : warningColor;
+        warningColor = warningColor == null ? "#CC9933" : warningColor;
         errorColor = errorColor == null ? "#FF0000" : errorColor;
         threadColor = threadColor == null ? "#FF00FF" : threadColor;
         packageColor = packageColor == null ? "#669999" : packageColor;
