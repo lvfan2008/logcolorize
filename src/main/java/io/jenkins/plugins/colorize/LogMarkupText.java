@@ -38,7 +38,7 @@ public class LogMarkupText {
 
     private static void processLogbackLevelColor(MarkupText text, Matcher matcher) {
         if (matcher.find()) {
-            addMarkup(text, matcher.start(1), matcher.end(1), color(matcher.group(2)));
+            addMarkup(text, matcher.start(1), matcher.end(1), color(matcher.group(1)));
         }
     }
 
